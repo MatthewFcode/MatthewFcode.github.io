@@ -1,15 +1,82 @@
 body {
-  background-color: #9bc5c3;
   text-align: center;
+  background: linear-gradient(90deg, #f08080, #9bc5c3);
 }
 
 .mainheading {
   font-size: 50pt;
   font-family: 'Hanalei Fill', system-ui;
+  animation-name: bouncy;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-timing-function: ease;
+}
+
+@keyframes bouncy {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-40px);
+  }
+
+  40% {
+    transform: translateX(0);
+  }
+
+  60% {
+    transform: translateX(40px);
+  }
+
+  80% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: tanslate(0);
+  }
 }
 
 .navlink {
   font-family: 'Hanalei fill', system-ui;
   text-decoration: none;
   font-size: 40pt;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#smallerheading {
+  font-family: 'Hanalei fill', system-ui;
+  font-size: 50px;
+}
+
+.indeximgs {
+  object-fit: cover;
+  border-radius: 15px;
+  width: 350px;
+  height: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.body {
+  background: linear-gradient(90deg);
+}
+
+.indeximgs:hover {
+  transform: scale(1.5);
+}
+
+.navlink:hover {
+  color: #008080;
+  transform: scale(1.3);
 }
