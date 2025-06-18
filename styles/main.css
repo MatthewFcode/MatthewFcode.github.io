@@ -8,21 +8,20 @@ body {
 .headerrow {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   margin-bottom: 100px;
   margin-top: 50px;
+  font-family: 'Hanalei fill', system-ui;
+  font-size: 25px;
 }
 
 .goback {
-  position: absolute;
-  left: 20px;
-  margin-left: 30px;
   text-decoration: none;
   font-size: 28px;
   font-family: 'Hanalei Fill', system-ui;
   transition: transform 0.3s ease;
-  display: inline-block;
+  margin-left: 60px;
 }
 
 .goback:hover {
@@ -35,9 +34,20 @@ body {
   font-size: 20px;
 }
 
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  right: 145px;
+  text-align: center;
+  justify-content: center;
+}
+
 #tehout-heading {
   text-align: center;
   margin: 0;
+  position: relative;
+  right: 375px;
 }
 
 .mainheading {
@@ -124,9 +134,13 @@ body {
   transition: transform 0.3s ease;
 }
 
+.css-concepts-link {
+  margin-top: 30px;
+}
+
 #blogheading {
   font-family: 'Hanalei fill', system-ui;
-  font-size: 50px;
+  font-size: 70px;
   animation-name: updown;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -153,6 +167,37 @@ body {
   100% {
     transform: translate(0);
   }
+}
+
+#nah-cooked {
+  font-family: 'Hanalei Fill', system-ui;
+  position: relative;
+  bottom: 70px;
+  right: 20px;
+}
+
+#yoda-img {
+  height: 225px;
+  width: 350px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+#box-model-img {
+  height: 225px;
+  width: 350px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+#yoda-img:hover {
+  transform: scale(1.1);
+}
+
+#box-model-img:hover {
+  transform: scale(1.1);
 }
 
 .indeximgs:hover {
