@@ -120,6 +120,20 @@ body {
   background: linear-gradient(90deg);
 }
 
+.right-table {
+  font-family: 'Hanalei Fill', system-ui;
+  font-size: 60px;
+  position: relative;
+  right: 100px;
+  transition: transform 0.3s ease;
+}
+
+.right-table a {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
 .wholetable {
   font-family: 'Hanalei Fill', system-ui;
   font-size: 60px;
@@ -327,4 +341,9 @@ body {
 .wholetable a:hover {
   color: #008080;
   transform: scale(1.2);
+}
+
+#logbreh {
+  background-image: url('https://img.freepik.com/premium-photo/close-up-logs_1048944-22070112.jpg');
+  background-size: cover;
 }
