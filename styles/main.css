@@ -138,6 +138,88 @@ body {
   margin-top: 30px;
 }
 
+.list {
+  list-style: none;
+  animation-name: rainbow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  left: 45px;
+  padding-bottom: 20px;
+}
+
+@keyframes rainbow {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: navy;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: brown;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.heading {
+  animation-name: rainbow-again;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes rainbow-again {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: navy;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: brown;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.whole-content {
+  font-family: 'Hanalei Fill', system-ui;
+  font-size: 17.5px;
+}
+
+.box-link {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.box-link:hover {
+  transform: scale(1.5);
+  color: #008080;
+}
+
 #blogheading {
   font-family: 'Hanalei fill', system-ui;
   font-size: 70px;
@@ -169,11 +251,44 @@ body {
   }
 }
 
+#title-rainbow {
+  animation-name: rainbow-again-again;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-again-again {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: navy;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: brown;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+
 #nah-cooked {
   font-family: 'Hanalei Fill', system-ui;
   position: relative;
   bottom: 70px;
   right: 20px;
+}
+
+#web-page-heading {
+  margin-bottom: 30px;
 }
 
 #yoda-img {

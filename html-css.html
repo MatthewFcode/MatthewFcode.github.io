@@ -14,7 +14,7 @@
   <header>
     <div class="headerrow">
     <a href="blog.html" class="goback"><h1>Go back</h1></a>
-    <h1 class="title">What is the difference between <br>Margin, Border and Padding?</h1>
+    <h1 class="title" id="title-rainbow">What is the difference between <br>Margin, Border and Padding?</h1>
     
     <div>
       
@@ -22,9 +22,11 @@
   <body>
     <div>
       <h2 id="nah-cooked">(chose this topic because I am the worst at it)</h2>
+    </div>
+      <div class="whole-content">
       <p>
         I will tackle this explanation from working outside to in; so I will
-        strt off explaining what the margin is. However beffore that it is
+        strt off explaining what the margin is. However before that <br>it is
         important to note that margin, border and padding are part of something<br>
         called the box model and all able to be manipulated by CSS in many
         different ways
@@ -33,15 +35,15 @@
         src="https://mundrisoft.com/tech-bytes/wp-content/uploads/2017/09/box-model.png"
         alt="Image of the box model" id="box-model-img"
       /></a>
-    </div>
+    
 
-    <h1>Margins</h1>
+    <h1 class="heading">Margins</h1>
     <p>
-      Margin is the outermost part of the box model and controls the spacing the
-      element has from other elements after the elements border (empty space)
+      Margin is the outermost part of the box model and controls the spacing the <br>
+      element has from other elements after the elements border (empty space).
     </p>
     <h3>CSS properties for margin:</h3>
-    <ul>
+    <ul class="list">
       <li>margin-top:</li>
       <li>margin-bottom:</li>
       <li>margin-left:</li>
@@ -57,18 +59,17 @@
         alt="Yoda" id="yoda-img"
     /></a>
     <div>
-      <h1>Borders</h1>
+      <h1 class="heading">Borders</h1>
       <p>
-        Border is the middle layer of the box model and is the outermost line
-        you can visually see on an elements and alot of the time you won't be
+        Border is the middle layer of the box model and is the outermost line you can visually see on an element<br> you won't be
         able to visually pinpoint exactly where the border is.<br> The border is
         mucch more customizable as you are able to acces the style making it
         dotted or solid and changing the colour.<br> Border-radius also allows you
-        to change the shape of the corners of your element. Obviously you can
-        acces the specific side of the border that you want to manipulate aswell
+        to change the shape of the corners of your element.<br> Obviously you can
+        access the specific side of the border that you want to manipulate aswell
       </p>
       <h3>CSS properties for border:</h3>
-      <ul>
+      <ul class="list">
         <li>border-style:</li>
         <li>border-width:</li>
         <li>border-color:</li>
@@ -78,18 +79,18 @@
         </li>
        
       </ul>
-      <h1>BOX model</h1>
+      <a href="https://www.youtube.com/watch?v=qvx2SZzoqqQ" target="_blank" class="box-link"><h1 >BOX model</h1></a>
     </div>
     <div>
-      <h1>Paddings</h1>
+      <h1 class="heading">Paddings</h1>
       <p>
-        Padding is the most inner part of the box model that I am covering. It
-        is the first content outside of the element adn before the border and
-        van be used to cotrol the space directly oustide of the element and
+        Padding is the most inner part of the box model that I am covering. <br>It
+        is the first content outside of the element and before the border and
+        can be used to control<br> the space directly oustide of the element and
         before the border.
       </p>
       <h3>CSS properties for padding:</h3>
-      <ul>
+      <ul class="list">
         <li>padding-top:</li>
         <li>padding-right:</li>
         <li>padding-bottom:</li>
@@ -98,6 +99,7 @@
           paddin: top right bottom left (shorthand for the above properties)
         </li>
       </ul>
+    </div>
     </div>
   </body>
 </html>
