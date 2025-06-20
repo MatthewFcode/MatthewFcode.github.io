@@ -124,6 +124,8 @@ body {
   font-family: 'Hanalei Fill', system-ui;
   grid-row-gap: 20px;
   grid-column-gap: 70px;
+  position: relative;
+  top: 30px;
 }
 
 #identity-p1 {
@@ -298,6 +300,18 @@ body {
   margin-top: 30px;
 }
 
+.log-link {
+  margin-top: 30px;
+}
+
+.identity-link {
+  margin-top: 30px;
+}
+
+.learning-plan-link {
+  margin-top: 30px;
+}
+
 .list {
   list-style: none;
   animation-name: rainbow;
@@ -446,13 +460,93 @@ body {
   justify-content: space-around;
   text-decoration: none;
   font-family: 'Hanalei Fill', system-ui;
+  margin-bottom: 80px;
 }
 
-#list-style {
-  list-style: none;
-  display: inline-block;
+.nav-div-identity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
 }
 
+.identity-header {
+  padding-top: 40px;
+  position: relative;
+  right: 65px;
+  animation-name: rainbow-updown;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes rainbow-updown {
+  0% {
+    color: black;
+    transform: translateY(0);
+  }
+
+  20% {
+    color: navy;
+    transform: translateY(20px);
+  }
+  40% {
+    color: red;
+    transform: translateY(0);
+  }
+  60% {
+    color: brown;
+    transform: translateY(-20px);
+  }
+  80% {
+    color: green;
+    transform: translateY(0);
+  }
+  100% {
+    color: black;
+    transform: translateY(0);
+  }
+}
+
+.goback-identity {
+  position: relative;
+  padding-top: 40px;
+  right: 500px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.goback-identity:hover {
+  transform: scale(1.2);
+  color: #008080;
+}
+
+.learning-plan-grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Hanalei Fill', system-ui;
+}
+
+.learning-plan-grid2 {
+  display: grid;
+  margin: 100px;
+  position: relative;
+  right: 40px;
+  grid-template-columns: repeat(3, 350px);
+}
+
+.click-me {
+  font-size: 50px;
+  transition: transform 0.3s ease;
+}
+.click-me:hover {
+  transform: scale(1.2);
+  color: #008080;
+  cursor: pointer;
+}
 #nah-cooked {
   font-family: 'Hanalei Fill', system-ui;
   position: relative;
