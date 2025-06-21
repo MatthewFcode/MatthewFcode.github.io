@@ -600,3 +600,156 @@ body {
   background-image: url('https://img.freepik.com/premium-photo/close-up-logs_1048944-22070112.jpg');
   background-size: cover;
 }
+
+@media (max-width: 1200px) {
+  .imgcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .identity-values-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .learning-plan-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .learning-plan-grid2 {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px;
+  }
+
+  .headerrow,
+  .nav-div-identity {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title,
+  #tehout-heading,
+  .right-table,
+  .wholetable {
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .mainheading {
+    font-size: 40pt;
+  }
+
+  .navlink {
+    font-size: 30pt;
+  }
+
+  .smallerheading {
+    font-size: 40px;
+  }
+
+  .right-table,
+  .wholetable {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgcontainer,
+  .learning-plan-grid1,
+  .learning-plan-grid2 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .indeximgs,
+  #yoda-img,
+  #box-model-img {
+    width: 90%;
+    height: auto;
+  }
+
+  .mainheading {
+    font-size: 30pt;
+  }
+
+  .navlink {
+    font-size: 24pt;
+  }
+
+  .smallerheading {
+    font-size: 30px;
+  }
+
+  .identity-values-content {
+    padding: 0 10px;
+  }
+
+  .goback,
+  .goback-identity {
+    margin-left: 0;
+    right: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .right-table,
+  .wholetable {
+    position: static;
+    font-size: 30px;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainheading {
+    font-size: 24pt;
+  }
+
+  .navlink {
+    font-size: 18pt;
+  }
+
+  .smallerheading {
+    font-size: 24px;
+  }
+
+  .identity-header {
+    font-size: 20px;
+    right: 0;
+    text-align: center;
+  }
+
+  .box-link {
+    font-size: 20px;
+  }
+
+  .click-me {
+    font-size: 30px;
+  }
+
+  #blogheading {
+    font-size: 40px;
+  }
+
+  .whole-content {
+    font-size: 14px;
+  }
+
+  .learning-plan-grid1,
+  .learning-plan-grid2 {
+    gap: 20px;
+  }
+
+  .log-link,
+  .css-concepts-link,
+  .identity-link,
+  .learning-plan-link {
+    margin-top: 20px;
+  }
+
+  .list {
+    left: 0;
+    text-align: center;
+  }
+}
