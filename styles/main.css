@@ -618,6 +618,10 @@ body {
   cursor: pointer;
 }
 
+.dom-link {
+  margin-top: 40px;
+}
+
 @media (max-width: 1200px) {
   .imgcontainer {
     grid-template-columns: repeat(2, 1fr);
