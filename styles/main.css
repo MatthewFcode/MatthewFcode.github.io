@@ -522,6 +522,14 @@ body {
   text-decoration: none;
   transition: transform 0.3s ease;
 }
+#go-back-dom {
+  margin-left: 150px;
+}
+
+#dom-header {
+  position: relative;
+  right: 150px;
+}
 
 .goback-identity:hover {
   transform: scale(1.2);
@@ -620,6 +628,70 @@ body {
 
 .dom-link {
   margin-top: 40px;
+}
+
+.dom-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+  font-family: 'Hanalei Fill', system-ui;
+  padding-right: 40px;
+  padding-left: 40px;
+  row-gap: 150px;
+}
+
+.title-dom {
+  font-size: 45px;
+  transition: transform 0.2s ease;
+}
+.title-dom:hover {
+  transform: scale(1.4);
+  color: #008080;
+  animation-name: title-dom-rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes title-dom-rainbow {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: navy;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: brown;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.dom-image {
+  border-radius: 15px;
+  height: 250px;
+  width: 350px;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.dom-image:hover {
+  transform: scale(1.5);
+}
+
+.footer {
+  height: 200px;
 }
 
 @media (max-width: 1200px) {
