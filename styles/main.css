@@ -274,21 +274,15 @@ body {
 .body {
   background: linear-gradient(90deg);
 }
+.table-grid {
+  display: flex;
+  align-items: flex-start;
+}
 
 .right-table {
-  font-family: 'Hanalei Fill', system-ui;
-  font-size: 60px;
   position: relative;
-  right: 100px;
-  transition: transform 0.3s ease;
+  left: 360px;
 }
-
-.right-table a {
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
 .wholetable {
   font-family: 'Hanalei Fill', system-ui;
   font-size: 60px;
