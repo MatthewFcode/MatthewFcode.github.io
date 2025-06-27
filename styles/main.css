@@ -644,8 +644,9 @@ body {
   transform: scale(1.4);
   color: #008080;
   animation-name: title-dom-rainbow;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   cursor: pointer;
 }
 
@@ -686,6 +687,117 @@ body {
 
 .footer {
   height: 200px;
+}
+
+.emotional-intelligence-main-div {
+  display: flex;
+  justify-content: center;
+  font-family: 'Hanalei Fill', system-ui;
+}
+
+.emotional-para {
+  width: 400px;
+  position: relative;
+  left: 150px;
+  margin-top: 50px;
+  transition: transform 0.1s ease;
+}
+
+.emotional-para:hover {
+  transform: scale(1.1);
+  color: #1434a4;
+}
+
+.emotional-image {
+  height: 200px;
+  width: 300px;
+  animation-name: log-runaway;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  margin-bottom: 60px;
+  transition: transform 0.1s ease;
+}
+
+.top-log {
+  margin-top: 20px;
+}
+
+.emotional-image:hover {
+  transform: scale(1.3);
+}
+
+.take-iq {
+  font-size: 45px;
+  animation-name: take-iq;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes take-iq {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: navy;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: brown;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes log-runaway {
+  0% {
+    transform: translateX(-670px);
+  }
+
+  100% {
+    transform: translateX(670px);
+  }
+}
+
+.eq-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(227, 11, 92, 0.7);
+  color: #9bc5c3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 300px;
+  height: 100px;
+}
+
+.eq-button:hover {
+  background-color: #008080;
+  transform: scale(1.3);
+}
+
+.eq-button:active {
+  transform: scale(0.7);
+  background-color: #008080;
+}
+
+.eq-button:focus {
+  box-shadow: 0 0 0 3px rgba(100, 200, 255, 0.5);
+  outline: none;
+}
+
+#rocket {
+  font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
