@@ -641,7 +641,7 @@ body {
   transition: transform 0.2s ease;
 }
 .title-dom:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   color: #008080;
   animation-name: title-dom-rainbow;
   animation-duration: 2s;
