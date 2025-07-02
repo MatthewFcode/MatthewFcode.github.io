@@ -9,6 +9,15 @@ body {
   text-align: center;
   background: linear-gradient(90deg, #f08080, #9bc5c3);
 }
+
+a {
+  text-decoration: none;
+}
+
+.problem-solving-link {
+  margin-top: 30px;
+}
+
 .tehout {
   font-family: 'Hanalei Fill' system-ui;
 }
@@ -798,6 +807,121 @@ body {
 
 #rocket {
   font-size: 2rem;
+}
+
+.JS-problemsolving-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+  align-items: center;
+}
+
+.problemsolving-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.content-1 {
+  grid-column: 2 / 3;
+  position: relative;
+  bottom: 60px;
+}
+
+.content-2 {
+  grid-column: 4 /5;
+  position: relative;
+  bottom: 60px;
+}
+
+.problemsolving-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 150px;
+}
+
+.content-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#problem-solving-text {
+  font-family: 'Hanalei Fill', system-ui;
+}
+
+#header-log {
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+  color: black;
+  font-size: x-large;
+}
+#header-log:hover {
+  transform: scale(1.2);
+  animation-name: header-log-rainbow;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes header-log-rainbow {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: navy;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: brown;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+
+#header-log:hover::after {
+  content: 'Cheeky Log';
+  display: block;
+  color: brown;
+}
+
+.problemsolving-image {
+  height: 200px;
+  width: 300px;
+  animation-name: log-runaway-js-problemsolving;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  transition: transform 0.1s ease;
+}
+
+.footer-shorter {
+  height: 70px;
+}
+
+@keyframes log-runaway-js-problemsolving {
+  0% {
+    transform: translateY(-125px);
+  }
+
+  100% {
+    transform: translateY(525px);
+  }
+}
+
+#go-back-js-problemsolving {
+  margin-left: 250px;
+}
+
+#js-problemsolving-header {
+  position: relative;
+  right: 200px;
 }
 
 @media (max-width: 1200px) {
