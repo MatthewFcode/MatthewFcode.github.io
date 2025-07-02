@@ -924,6 +924,73 @@ a {
   right: 200px;
 }
 
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #b2beb5;
+  transition: transform 0.2s ease;
+}
+
+.ball:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: #899499;
+}
+
+.ball-div {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  gap: 80px;
+  width: auto;
+  align-items: center;
+}
+
+.ball-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+#ball-up {
+  animation-name: ball-going-up;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  transition: transform 0.1s ease;
+}
+
+@keyframes ball-going-up {
+  0% {
+    transform: translateY(-320px);
+  }
+
+  100% {
+    transform: translateY(500px);
+  }
+}
+
+#ball-down {
+  animation-name: ball-going-down;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  transition: transform 0.1s ease;
+}
+
+@keyframes ball-going-down {
+  0% {
+    transform: translateY(500px);
+  }
+
+  100% {
+    transform: translateY(-320px);
+  }
+}
+
 @media (max-width: 1200px) {
   .imgcontainer {
     grid-template-columns: repeat(2, 1fr);
