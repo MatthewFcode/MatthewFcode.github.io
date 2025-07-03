@@ -630,7 +630,7 @@ a {
 }
 
 .dom-link {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .dom-grid {
@@ -1073,6 +1073,70 @@ a {
 #neuro-header {
   position: relative;
   right: 128px;
+}
+#maori-header {
+  position: relative;
+  right: 107px;
+}
+
+.maori-table {
+  display: flex;
+  justify-content: center;
+  font-family: 'Hanalei Fill', system-ui;
+}
+
+.m-table-head {
+  font-size: x-large;
+}
+.m-border th,
+.m-border td {
+  border: 10px dotted #5d3fd3;
+}
+
+.m-border {
+  width: 90%;
+  height: 600px;
+  font-size: 1.3rem;
+}
+
+th {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.te-whare-link {
+  margin-top: 30px;
+}
+
+.m-table-body,
+.m-table-head {
+  animation-name: m-table-scale;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  transition: transform 0.3s ease;
+}
+
+@keyframes m-table-scale {
+  0% {
+    transform: scale(0.8);
+  }
+  30% {
+    transform: scale(1);
+    color: #e30b5d;
+  }
+  50% {
+    transform: scale(0.8);
+    color: #e4d00a;
+  }
+  70% {
+    transform: scale(1);
+    color: #5d3fd3;
+  }
+  100% {
+    transform: scale(0.8);
+    color: aqua;
+  }
 }
 
 @media (max-width: 1200px) {
