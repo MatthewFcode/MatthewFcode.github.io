@@ -994,7 +994,7 @@ a {
 .neuroplasticity-grid {
   display: grid;
   grid-template-columns: repeat(3, 450px);
-  gap: 150px;
+  gap: 90px;
   justify-content: center;
   font-family: 'Hanalei Fill', system-ui;
   margin-top: 50px;
