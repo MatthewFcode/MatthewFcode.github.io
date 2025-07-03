@@ -991,6 +991,78 @@ a {
   }
 }
 
+.neuroplasticity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  gap: 150px;
+  justify-content: center;
+  font-family: 'Hanalei Fill', system-ui;
+  margin-top: 50px;
+}
+
+.neuro-para {
+  transition: transform 0.2s ease;
+  padding-bottom: 60px;
+  margin-top: 30px;
+}
+
+.neuro-para:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  animation-name: neuro-para-rainbow;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+}
+
+.neuro-para:hover::after {
+  content: 'another cheeky log';
+  transform: scale(0.5);
+  display: block;
+}
+
+@keyframes neuro-para-rainbow {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: navy;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: brown;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.border-container {
+  width: 100%;
+  text-align: center;
+}
+
+.shorter-border {
+  border-bottom: 20px dotted #5d3fd3;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#go-back-neuro {
+  margin-left: 80px;
+}
+
+#neuro-header {
+  position: relative;
+  right: 140px;
+}
+
 @media (max-width: 1200px) {
   .imgcontainer {
     grid-template-columns: repeat(2, 1fr);
