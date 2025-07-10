@@ -630,6 +630,20 @@ a {
   cursor: pointer;
 }
 
+#log-breh-again {
+  display: inline-block;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://media.istockphoto.com/id/1018735500/photo/stacked-logs.jpg?s=612x612&w=0&k=20&c=lj3Fa4ayAAvw3qIhX04n0KIlOACoVE_Y2t3iogkZqLk=');
+  background-size: cover;
+
+  transition: 0.3s;
+}
+
+#log-breh-again:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 .dom-link {
   margin-top: 30px;
 }
@@ -1116,6 +1130,22 @@ th {
   animation-iteration-count: infinite;
   animation-duration: 20s;
   transition: transform 0.3s ease;
+}
+
+.summary-ball {
+  /* Removes bullet/marker in some browsers */
+  cursor: pointer; /* Keep it interactive */
+  width: 300px;
+  height: 500px;
+  background-color: black;
+  border-radius: 50%; /* Ensures text still shows properly */
+}
+
+.ball-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
 }
 
 @keyframes m-table-scale {
