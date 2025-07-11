@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+summary {
+  list-style: none; /* Removes bullet in some browsers */
+  cursor: pointer;
+}
+
 .problem-solving-link {
   margin-top: 30px;
 }
@@ -1133,19 +1138,59 @@ th {
 }
 
 .summary-ball {
-  /* Removes bullet/marker in some browsers */
-  cursor: pointer; /* Keep it interactive */
-  width: 300px;
-  height: 500px;
+  cursor: pointer;
+  width: 105px;
+  height: 105px;
   background-color: black;
-  border-radius: 50%; /* Ensures text still shows properly */
+  border-radius: 50%;
+  opacity: 0.6;
+  animation-name: shine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: transform 0.2s ease;
+}
+
+.summary-ball:hover {
+  opacity: 0.8;
+  transform: scale(1.6);
 }
 
 .ball-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  place-items: center;
+  row-gap: 100px;
   align-items: center;
+}
+.fr-para {
+  width: 300px;
+  font-family: 'Hanalei Fill', system-ui;
+  margin-top: 50px;
+}
+.fr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@keyframes shine {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.33);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.33);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes m-table-scale {
