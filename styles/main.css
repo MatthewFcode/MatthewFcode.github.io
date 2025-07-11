@@ -552,6 +552,8 @@ summary {
   justify-content: center;
   align-content: center;
   font-family: 'Hanalei Fill', system-ui;
+  border-bottom: 7px dashed black;
+  margin-bottom: 100px;
 }
 
 .learning-plan-grid2 {
@@ -1199,6 +1201,29 @@ th {
   font-size: 20px;
   color: blueviolet;
   opacity: 0.8;
+}
+
+.s5-learning-plan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  grid-row-gap: 100px;
+
+  align-items: start;
+
+  justify-content: center;
+  font-family: 'Hanalei Fill', system-ui;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.learning-plan-headings {
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Hanalei Fill', system-ui;
+  font-size: 50px;
+  margin-bottom: 100px;
 }
 @keyframes shine {
   0% {
